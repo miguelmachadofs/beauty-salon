@@ -1,9 +1,4 @@
-// DOM Document Object Model
-// modelagem do documento html para um objeto no javaScript, ou seja, maneira de controlar o html pelo javaScript
-// transforma tudo que é html em objeto
-// estrutura: document.
-
-/* abre e fecha o menu quando clicar no ícone: "hamburguer" e x */
+/* abre e fecha o menu quando clicar no ícone: hambúrguer e x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -13,7 +8,7 @@ for (const element of toggle) {
   })
 }
 
-/*quando clicar em um ícone do menu, fechar o menu */
+/* quado clicar em um ícone do menu, esconder o menu */
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
@@ -22,60 +17,91 @@ for (const link of links) {
   })
 }
 
-/* mudar o header da página quano der scroll */
+/* adicionar sombreamento quando o scroll passar do header */
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
+
 function changeHeaderWhenScroll() {
-  const header = document.querySelector('#header')
-  const navHeight =
-    header.offsetHeight /*propriedade de deslocamento da altura*/
   if (window.scrollY >= navHeight) {
-    // scroll é maior que a altura do header
     header.classList.add('scroll')
   } else {
-    // menor que a altura do header
     header.classList.remove('scroll')
   }
 }
 
-/* Testimonials carousel/slider/Swiper */
-const swiper = new Swiper('.swiper-container', {
+/* swiper */
+const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
 })
 
-/* ScrollReveal : Mostrar elementos quando der scroll na página */
-const scrollReveal = ScrollReveal({
+/* scrollreveal */
+const scrollreveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 700,
+  duration: '700',
   reset: true
 })
 
-scrollReveal.reveal(
+scrollreveal.reveal(
   `#home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials,
-  #contact .text, #contact .links,
-  footer .brand, footer .social
+  #contact .text, #contact .links
   `,
   { interval: 100 }
 )
 
-/* Botão "voltar para o topo" */
+/* Back to top */
+const backToTopButton = document.querySelector('.back-to-top')
+
 function backToTop() {
-  const backToTopButton = document.querySelector('.back-to-top')
-  if (window.scrollY >= 700) {
+  if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
   }
 }
+// Menu ativo conforme a seção visível na página
+const sections = document.querySelectorAll('main section[id]')
 
+function activeMenuAtCurrentSection() {
+  const limit = window.pageYOffset + (window.innerHeight / 8) * 4
+
+  for (const section of sections) {
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.offsetHeight
+    const sectionId = section.getAttribute('id')
+
+    const limitStart = limit >= sectionTop
+    const limitEnd = limit <= sectionTop + sectionHeight
+
+    if (limitStart && limitEnd) {
+      document
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
+        .classList.add('active')
+    } else {
+      document
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
+        .classList.remove('active')
+    }
+  }
+}
+
+/* When scroll */
 window.addEventListener('scroll', function () {
-  changeHeaderWhenScroll()
   backToTop()
+  changeHeaderWhenScroll()
+  activeMenuAtCurrentSection()
 })

@@ -1,69 +1,56 @@
 <!DOCTYPE html>
-<!-- documento html 5 -->
 <html lang="pt_BR">
-  <!-- tag "root" (raiz) -->
   <head>
-    <!-- tag "filho" cabeçalho das configuraçõe específicas da página -->
     <!-- PAGE INFO -->
     <meta charset="UTF-8" />
-    <!-- meta serve para configurar toda a página -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <!-- viewport a tela (altura e largura) e width=device-width significa que a largura vai ser igual a largura do próprio dispositivo e a scale faz com que a escala se mantenha igual a 1, nem aumente e nem diminui -->
-    <!-- eset meta, em específico, deixa o documento mais flexível para todos os dispositivos -->
-    <title>OriginSix</title>
-    <!-- título da página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrignSix</title>
 
-    <!-- ICONS -->
+    <!-- Icons -->
     <link rel="stylesheet" href="assets/fonts/style.css" />
 
     <!-- Swiper -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
 
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- tag "filho" corpo -->
-    <header id="header">
+    <header id="header" class="scroll">
       <nav class="container">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
-        <!-- menu -->
         <div class="menu">
           <ul class="grid">
-            <!-- "ul" é uma lista e "li" representa cada ítem -->
             <li><a class="title" href="#home">Início</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Serviços</a></li>
             <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-            <!-- cada ítem terá uma tag "a" na qual direcionará o usuário para algum lugar do mundo (href), ao clicar. O "#" faz com que o usuário seja direcionado dentro do próprio documento (o site) de acordo com o id referenciado -->
+            <li><a class="title" href="#contact">Contatos</a></li>
           </ul>
         </div>
-        <!-- /menu -->
         <div class="toggle icon-menu"></div>
         <div class="toggle icon-close"></div>
       </nav>
     </header>
 
     <main>
+      <!-- HOME -->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
             <img
-              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-              alt="Mulher sorrindo penteando e secando o cabelo de outra mulher"
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+              alt="Mulher prendendo cabelo de outra mulher"
             />
           </div>
           <div class="text">
@@ -79,36 +66,36 @@
 
       <div class="divider-1"></div>
 
+      <!-- SOBRE -->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
             <img
-              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              alt="3 mulheres sorrindo segurando utencílios para cabelo"
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="3 mulheres sorrindo com utensílios de cabeleireiras"
             />
           </div>
           <div class="text">
             <h2 class="title">Sobre nós</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              sint explicabo officia! Quaerat dolorem quam ullam. Ut beatae
-              culpa, quasi, libero, assumenda sunt aliquam rerum obcaecati
-              blanditiis alias et laboriosam!
-            </p>
-            <br />
-            <!-- a tag br é um brake (quebra de linha)-->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-              doloremque saepe esse aliquid illo? Similique, quo ab magni quidem
-              quas suscipit quis doloremque, adipisci dicta tempora in. Nemo,
-              nihil saepe.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              facere ratione enim voluptatibus quas repellendus error deserunt
+              deleniti, architecto nam hic facilis pariatur minus iure ab
+              nesciunt neque. Laboriosam, eos.
             </p>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              similique at ipsam eaque unde aut odio libero voluptatibus iste.
-              Itaque earum nobis fugit. Magni fuga, reiciendis earum hic
-              recusandae aut.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Blanditiis voluptatum voluptates voluptatibus unde aperiam magni
+              accusantium eveniet harum quisquam. Voluptatem, dignissimos eos.
+              Atque odio, aliquam molestias eum consequatur quis sapiente!
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              voluptatem saepe veritatis nihil sit libero earum cumque impedit,
+              nisi reprehenderit, laborum recusandae corrupti. Quam similique
+              illo ratione sed fugiat suscipit!
             </p>
           </div>
         </div>
@@ -116,11 +103,12 @@
 
       <div class="divider-2"></div>
 
+      <!-- SERVICOS -->
       <section class="section" id="services">
         <div class="container grid">
           <header>
             <h2 class="title">Serviços</h2>
-            <p>
+            <p class="subtitle">
               Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
               conquistou clientes de inúmeros países com seus tratamentos
               exclusivos e totalmente naturais
@@ -131,27 +119,24 @@
               <i class="icon-woman-hair"></i>
               <h3 class="title">Terapia capilar</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                provident illo rerum exercitationem. Provident at earum, animi
-                esse ea, dignissimos sunt quae molestiae
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates voluptate tempore perspiciatis
               </p>
             </div>
             <div class="card">
               <i class="icon-trim"></i>
               <h3 class="title">Cortes</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                provident illo rerum exercitationem. Provident at earum, animi
-                esse ea, dignissimos sunt quae molestiae
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates voluptate tempore perspiciatis
               </p>
             </div>
             <div class="card">
               <i class="icon-cosmetic"></i>
               <h3 class="title">Tratamentos</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                provident illo rerum exercitationem. Provident at earum, animi
-                esse ea, dignissimos sunt quae molestiae
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates voluptate tempore perspiciatis
               </p>
             </div>
           </div>
@@ -160,23 +145,24 @@
 
       <div class="divider-1"></div>
 
+      <!-- TRATAMENTOS -->
       <section class="section" id="testimonials">
         <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials swiper-container">
+          <div class="testimonials swiper">
             <div class="swiper-wrapper">
               <div class="testimonial swiper-slide">
                 <blockquote>
-                  <!-- a tag bloquecote é utilizada quando lidamos com conteúdos/textos que não são de nossa autoria -->
                   <p>
                     <span>&ldquo;</span>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Deleniti earum quaerat cum incidunt sit ex, molestias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus quasi consequatur fugiat iusto? Tempora
+                    cupiditate minus laudantium at? Ut qui cupiditate itaque
+                    doloremque impedit maiores nihil est nostrum numquam quam?
                   </p>
                   <cite>
-                    <!-- a tag cite é utilizada para se referir a citações feitas por outras pessoas -->
                     <img
                       src="https://randomuser.me/api/portraits/women/30.jpg"
                       alt="Foto de Wanessa Souza"
@@ -185,50 +171,53 @@
                   </cite>
                 </blockquote>
               </div>
-
               <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     <span>&ldquo;</span>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Deleniti earum quaerat cum incidunt sit ex, molestias.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ex, sequi magnam. Modi consectetur omnis molestiae qui sit
+                    fugit nemo, sed sunt? Accusantium, ea beatae. Ratione
+                    aspernatur aliquid quia modi adipisci?
                   </p>
                   <cite>
                     <img
-                      src="https://randomuser.me/api/portraits/women/21.jpg"
-                      alt="Foto de Franciele Venega"
+                      src="https://randomuser.me/api/portraits/women/76.jpg"
+                      alt="Foto de Rogéria Lopez"
                     />
-                    Franciele Venega
+                    Rogéria Lopez
                   </cite>
                 </blockquote>
               </div>
-
               <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     <span>&ldquo;</span>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Deleniti earum quaerat cum incidunt sit ex, molestias.
+                    Error voluptate id unde qui fuga cumque sequi, dolore, nemo,
+                    facere dolores voluptates doloremque a. Inventore molestiae
+                    voluptate magnam, non vitae fugiat.
                   </p>
                   <cite>
                     <img
-                      src="https://randomuser.me/api/portraits/women/85.jpg"
-                      alt="Foto de Valeska Fabris"
+                      src="https://randomuser.me/api/portraits/women/90.jpg"
+                      alt="Foto de Fernando Machado"
                     />
-                    Valeska Fabris
+                    Fernanda Machado
                   </cite>
                 </blockquote>
               </div>
             </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <div class="divider-2"></div>
 
-      <!-- CONTACT -->
+      <!-- CONTATOS -->
       <section class="section" id="contact">
         <div class="container grid">
           <div class="text">
@@ -238,22 +227,19 @@
               ouvir suas críticas e sugestões.
             </p>
             <a
-              href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário"
+              href="https://api.whatsapp.com/send?phone=+5551997106045&text=Oi! Gostaria de agendar um horário"
               class="button"
               target="_blank"
-              ><i class="icon-whatsapp"></i> Entre em contato</a
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
             >
-            <!-- link para a api do whatsapp e colocar número no lugar do "Seu número"-->
-            <!-- "target='_blank'" faz com que se abra uma nova página sem sair da página original -->
           </div>
-
-          <div class="link">
+          <links>
             <ul class="grid">
               <li><i class="icon-phone"></i> 11 99845-6754</li>
               <li><i class="icon-map-pin"></i> R. Amauri Souza, 346</li>
               <li><i class="icon-mail"></i> contato@beautysalon.com</li>
             </ul>
-          </div>
+          </links>
         </div>
       </section>
 
@@ -261,7 +247,6 @@
     </main>
 
     <footer class="section">
-      <!-- footer é o rodapé da página -->
       <div class="container grid">
         <div class="brand">
           <a class="logo logo-alt" href="#home">beauty<span>salon</span>.</a>
@@ -269,27 +254,28 @@
           <p>Todos os direitos reservados.</p>
         </div>
 
-        <div class="social">
-          <a href="https://instagram.com" target="_blank"
-            ><i class="icon-instagram"></i
-          ></a>
-          <a href="https://facebook.com" target="_blank"
-            ><i class="icon-facebook"></i
-          ></a>
-          <a href="https://youtube.com" target="_blank"
-            ><i class="icon-youtube"></i
-          ></a>
+        <div class="social grid">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <i class="icon-youtube"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- setinha que volta para o início da página -->
-    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    <a href="#home" class="back-to-top">
+      <i class="icon-arrow-up"></i>
+    </a>
 
     <!-- Swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <!-- scrollreveal -->
+    <!-- ScroolReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- main.js -->
